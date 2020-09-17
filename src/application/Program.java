@@ -13,13 +13,16 @@ import entities.enums.OrderStatus;
 
 public class Program {
 	public static void main(String[] args) throws ParseException {
-		Scanner sc = new Scanner(System.in);
-		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+		
+		 Scanner sc = new Scanner(System.in);
+		 SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 		
 		 System.out.println("Enter client data: ");
 		 System.out.print("Name: ");
+		 sc.next();
 		 String name = sc.nextLine();
 		 System.out.print("E-mail: ");
+		 sc.next();
 		 String email = sc.nextLine();
 		 System.out.print("Birth date (DD/MM/YYYY): ");
 		 Date birthdate = sdf.parse(sc.next());

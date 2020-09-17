@@ -1,5 +1,6 @@
 package entities;
 
+import java.util.List;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -14,7 +15,7 @@ public class Order {
 	
 	private Client client;
 	
-	private ArrayList<OrderItem> items = new ArrayList<OrderItem>();
+	private List<OrderItem> items = new ArrayList<OrderItem>();
 	
 	public Order() {
 	}
